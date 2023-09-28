@@ -1,0 +1,130 @@
+.misPost {
+    
+    background: linear-gradient(to right, #009900, #0099cc);
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+  }
+.h1_post{
+    text-align: center;
+}
+.section_post{
+    background-color: #ffff99;
+}
+.contenedor{
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.card{
+    background-color:darkred;
+    height:290px;
+    max-height: 320px;
+    width:98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+.cold-md-4{
+    width:40%;
+    height:100%;
+    }
+.img-fluid{
+    width:100%;
+    height:290px;
+}
+.col-md-8{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    height:290px;
+    justify-content: space-between;
+}
+.card-body{
+    height:290px;
+}
+.card-title{
+    color:orange;
+    margin-top: -15px;
+    text-align: center;
+    font-size: 15px;
+    height: 10%;
+}
+.card-text{
+    text-align: center;
+    color:white;;
+    font-size: 10px;
+    font-weight: 0;
+}
+.caja_botones{
+    margin-bottom: 10px;;
+}
+
+.botones{
+    color:#fff;
+    border:none;
+    background: linear-gradient(to right,#009900,#0099cc);
+    padding: 10px 15;
+    cursor: pointer;
+    font-size: 10px;
+}
+.p_calificacion{
+    font-size: 15px;
+    color:orange;
+}
+.fa-star{
+    color:orange;
+    font-size: 11px;
+}
+.fecha{
+    color:orange;
+    font-size: 10px;
+    height:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.p_fecha{
+    align-self: flex-end;
+    margin:5px;
+}
+/*  FORMULARIO */
+.div_formulario{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.h2_formulario{
+    text-align: center;
+}
+.form_formulario{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    justify-content: center;
+}
+.boton_formulario{
+    color:orange;
+    background-color: black;
+}
+
+/* Media queries */
+@media screen and (max-width: 992px) and (min-width: 776px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr); /* Cambiar a una sola columna */
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .contenedor {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+}
+@media screen and (max-width: 776px) and (min-width: 500px) {
+    .contenedor {
+        grid-template-columns: 1fr; /* Mantener una sola columna */
+        
+    }
+}
+
+
+
